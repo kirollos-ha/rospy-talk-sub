@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <arg name="chatter_topic"	            default="/some/fucking/topic"/>
+
+    <node name="talk" pkg="talk" type="talk.py" output="screen">
+      <param name="chatter_topic" type="string" value="$(arg chatter_topic)"/>
+    </node>
+
+    <node name="listen" pkg="listen" type="listen.py" output="screen">
+      <param name="chatter_topic" type="string" value="$(arg chatter_topic)"/>
+    </node>
+</launch>

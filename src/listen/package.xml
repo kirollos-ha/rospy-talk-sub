@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>listen</name>
+  <version>0.0.1</version>
+  <description>node for the trajectory estimation</description>
+  <maintainer email="driverless.division@firenzerace.it">FRT Driverless Division</maintainer>
+
+  <license>WTFPL</license>
+  <!-- Here is an example of dependencies you can include, they have to be the same as "setup.py" and "CMakeLists.txt" -->
+  <buildtool_depend>catkin</buildtool_depend> <!-- This dependency is mandatory for all packages -->
+  
+  <depend>std_msgs</depend>
+  <depend>rospy</depend>
+  <!-- <depend>driverless_msgs</depend> -->
+  
+  <export></export>
+</package>
